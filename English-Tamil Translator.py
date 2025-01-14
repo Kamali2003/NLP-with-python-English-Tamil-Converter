@@ -1,5 +1,3 @@
-!pip install googletrans==3.1.0a0
-
 from googletrans import Translator, LANGUAGES
 
 def translate_to_tamil(text):
@@ -13,6 +11,7 @@ def translate_to_tamil(text):
         # Check if the detected language is English
         if detected_lang == 'en':
             # Translate the text to Tamil
+            # ta => tamil 
             translation = translator.translate(text, src='en', dest='ta')
 
             # Return the translated text
