@@ -16,9 +16,10 @@ async def translate_to_tamil(text="hii"):
                 # kannada = await translator.translate(text, dest='kn')
                 # telugu = await translator.translate(text, dest='te')
                 # hindi = await translator.translate(text, dest='hi')
-                return [tamil.text, kannada.text, telugu.text, hindi.text]
+                # return [tamil.text, kannada.text, telugu.text, hindi.text]
+                return [tamil.text]
             else:
-            return "Source language is not English"
+                return "Source language is not English"
             # print(f"Detected Language: {detected_lang}")
     except Exception as e:
         print(f"Translation Error: {str(e)}")
